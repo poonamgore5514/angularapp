@@ -1,0 +1,20 @@
+<p>welcome {{username}} </p>
+
+{{"JBK"  |  lowercase }}<br>
+
+{{birthdate | date}}<br>
+
+{{birthdate | date: "dd-MM-yyyy"}}<br>
+
+{{"TheKiranAcademy" | slice: 3:8}}<br>
+
+{{"amit" | title : 'male'}}<br>
+
+{{"punam" | title : 'female'}}<br>
+
+<img [src]="imgurl" width="300" height="250">
+
+<ul *ngFor="let person of persons" [style.color]="getColor(person.country)">
+
+    <li>{{person.name}} {{person.country}} </li>
+</ul>
